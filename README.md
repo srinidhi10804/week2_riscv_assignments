@@ -27,3 +27,51 @@ Search for specific files (listed in the script) in a given directory. If found,
 2. Run the script:
    ```bash
    python copy_listed_files.py
+
+## Assignment 3: Collect Failed Subdirectories
+
+### Purpose:
+
+Traverse all subdirectories to identify those containing a STATUS_FAILED file. Each such subdirectory is copied in its entirety into a new folder named failed_subdirectories located in the main directory.
+
+### How to Run:
+
+Place the script in your working directory.
+
+### Run the script:
+
+collect_failed.sh
+
+### Assignment 4: Copy Matching Directories
+
+### Purpose:
+
+Find all subdirectories whose names start with test_v and copy them (with all their contents) into a specified destination directory. The destination directory will be created if it does not already exist.
+
+### How to Run:
+
+Set the parent and destination directories in the script.
+
+### Run the script:
+
+test_v1
+
+### Assignment 5: Rename and Copy Co-directories
+
+### Purpose:
+
+Traverse all co-directories under the parent directory. For each co-directory that contains a dut subdirectory:
+
+Rename all .elf files inside dut to match the co-directory's name (e.g., add.elf if the co-directory is add).
+
+Copy the entire co-directory to a destination directory.
+
+Skip copying any ref subdirectory inside the co-directory.
+
+### How to Run:
+
+Adjust the parent and destination directory paths in the script.
+
+### Run the script:
+
+python rename_and_copy_5.py
